@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+<marquee behavior="scroll" direction="right">ngclass and ng if case</marquee>
+            <div class="card  mb-3" *ngFor="let s of mobileProducts; index as i"
+            [ngClass]="{
+                'bg-info' :  (i+1) % 2 === 0 ,
+                'bg-warning' :  (i+1) % 2 !== 0 
+
+            }"
+            
+            >
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="imgContainer">
+                                <p class="noImage" *ngIf="!s.image"> not available this product </p>
+                                <img [src]="mobileProducts[i].image" alt="mobile" class="img-fluid">
+    
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h2>{{s.name}}</h2>
+                            <ul  class="list-group">
+                                <li class="">{{s.id}}</li>
+                                <li class="">{{s.name}}</li>
+                                <li class="">{{s.brand}}</li>
+                                <li class="">{{s.price}}</li>
+                                <li class="">{{s.isAvailable}}</li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

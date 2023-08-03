@@ -1,0 +1,18 @@
+img{
+    height: 150px;
+}
+
+.noImage{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(100%);
+}
+
+marquee{
+    padding: 20px;
+    font-size: 25px;
+    background-color: aquamarine;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

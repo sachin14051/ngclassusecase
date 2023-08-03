@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { PractiseComponent } from './practise/practise.component';
+import { PractiseComponent } from './shared/components/practise/practise.component';
 
 @NgModule({
   declarations: [
@@ -15,4 +15,4 @@ import { PractiseComponent } from './practise/practise.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {  }
